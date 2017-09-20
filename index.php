@@ -31,7 +31,7 @@
 						<div class="content">
 							<div class="header">
 								<div class="logo text-center"><img src="assets/img/logo-dark.png" alt="Klorofil Logo"></div>
-								<p class="lead">Login to your account</p>
+								<p class="lead">Login</p>
 							</div>
 							<form class="form-auth-small" action="index.php">
 								<div class="form-group">
