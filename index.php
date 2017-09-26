@@ -91,8 +91,8 @@ if($_POST) {
 							<?php if($errors) {
 								foreach ($errors as $key => $value) {
 									echo '<div class="alert alert-warning" role="alert">
-									<i class="glyphicon glyphicon-exclamation-sign"></i>
-									'.$value.'</div>';										
+									<i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+									 '.$value.'</div>';										
 									}
 							} ?>
 							</div>
