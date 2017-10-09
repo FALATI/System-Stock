@@ -107,7 +107,7 @@ if($_POST) {
 								</div>
 								<button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
 								<div class="bottom">
-									<span class="helper-text"><i class="fa fa-lock"></i> <a href="#">Forgot password?</a></span>
+									<span class="helper-text"><i class="fa fa-lock"></i> <a href="page-lockscreen.php">Forgot password?</a></span>
 								</div>
 							</form>
 						</div>
