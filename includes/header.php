@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="assests/old/font-awesome/css/font-awesome.min.css">
 
   <!-- custom css -->
-  <link rel="stylesheet" href="custom/css/custom.css">
+  <link rel="stylesheet" href="assests/custom/css/custom.css">
 
 	<!-- DataTables -->
   <link rel="stylesheet" href="assests/old/plugins/datatables/jquery.dataTables.min.css">
