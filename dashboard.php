@@ -35,7 +35,7 @@ $connect->close();
     <link rel="stylesheet" href="assests/plugins/fullcalendar/fullcalendar.print.css" media="print">
 
 
-<div class="row">
+<div class="row space-top">
 	
 	<div class="col-md-3">
 								<div class="metric">
