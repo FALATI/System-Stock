@@ -129,7 +129,7 @@ footer {
   padding: 28px 10px; }
 
 .navbar + .main-content {
-  padding: 25px 0 28px 5px; }
+  padding: 105px 0 28px 5px; }
   @media screen and (max-width: 767px) {
     .navbar + .main-content {
       padding-top: 155px; } }
