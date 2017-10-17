@@ -6,8 +6,8 @@
 		</footer>
 	</div>
 	<!-- END WRAPPER -->
-
-</div> <!-- container -->
+   </div> <!-- container -->
+ </div>
 
 	<!-- file input -->
 	<script src="assests/plugins/fileinput/js/plugins/canvas-to-blob.min.js'); ?>" type="text/javascript"></script>	

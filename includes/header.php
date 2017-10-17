@@ -84,5 +84,6 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 	</nav>
-
-	<div class="container">
+  
+<div class="main-content">
+	<div class="container-fluid">

@@ -129,7 +129,7 @@ footer {
   padding: 28px 10px; }
 
 .navbar + .main-content {
-  padding: 105px 0 28px 5px; }
+  padding: 25px 0 28px 5px; }
   @media screen and (max-width: 767px) {
     .navbar + .main-content {
       padding-top: 155px; } }
@@ -168,7 +168,6 @@ html.fullscreen-bg #wrapper {
   margin: 0;
   border: none;
   background-color: #fff;
-  margin-bottom: 15px;
 }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color: #fafafa; }

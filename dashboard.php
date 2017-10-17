@@ -25,87 +25,58 @@ $connect->close();
 
 
 <style type="text/css">
-	.ui-datepicker-calendar {
-		display: none;
-	}
+.ui-datepicker-calendar {
+	display: none;
+}
 </style>
 
 <!-- fullCalendar 2.2.5-->
-    <link rel="stylesheet" href="assests/plugins/fullcalendar/fullcalendar.min.css">
-    <link rel="stylesheet" href="assests/plugins/fullcalendar/fullcalendar.print.css" media="print">
-
+<link rel="stylesheet" href="assests/plugins/fullcalendar/fullcalendar.min.css">
+<link rel="stylesheet" href="assests/plugins/fullcalendar/fullcalendar.print.css" media="print">
 
 <div class="row space-top">
 	
 	<div class="col-md-3">
-								<div class="metric">
-									<span class="icon"><i class="fa fa-download"></i></span>
-									<p>
-										<span class="number"><?php echo $countProduct; ?></span>
-										<span class="title">Total Product</span>
-									</p>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="metric">
-									<span class="icon"><i class="fa fa-shopping-bag"></i></span>
-									<p>
-										<span class="number"><?php echo $countOrder; ?></span>
-										<span class="title">Total Orders</span>
-									</p>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="metric">
-									<span class="icon"><i class="fa fa-eye"></i></span>
-									<p>
-										<span class="number"><?php echo $countLowStock; ?></span>
-										<span class="title">Low Stock</span>
-									</p>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="metric">
-									<span class="icon"><i class="fa fa-bar-chart"></i></span>
-									<p>
-										<span class="number">
-											<?php if($totalRevenue) {
-		    										echo $totalRevenue;
-		    										} else {
-		    											echo '0';
-		    									} ?>
-										</span>
-										<span class="title"> Total Revenue</span>
-									</p>
-								</div>
-							</div>
-
-	<div class="col-md-4">
-		<div class="card">
-		  <div class="cardHeader">
-		    <h1><?php echo date('d'); ?></h1>
-		  </div>
-
-		  <div class="cardContainer">
-		    <p><?php echo date('l') .' '.date('d').', '.date('Y'); ?></p>
-		  </div>
-		</div> 
-		<br/>
-
-		<div class="card">
-		  <div class="cardHeader" style="background-color:#245580;">
-		    <h1><?php if($totalRevenue) {
-		    	echo $totalRevenue;
-		    	} else {
-		    		echo '0';
-		    		} ?></h1>
-		  </div>
-
-		  <div class="cardContainer">
-		    <p> <i class="glyphicon glyphicon-usd"></i> Total Revenue</p>
-		  </div>
-		</div> 
-
+		<div class="metric">
+			<span class="icon"><i class="fa fa-download"></i></span>
+			<p>
+				<span class="number"><?php echo $countProduct; ?></span>
+				<span class="title">Total Product</span>
+			</p>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="metric">
+			<span class="icon"><i class="fa fa-shopping-bag"></i></span>
+			<p>
+				<span class="number"><?php echo $countOrder; ?></span>
+				<span class="title">Total Orders</span>
+			</p>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="metric">
+			<span class="icon"><i class="fa fa-eye"></i></span>
+			<p>
+				<span class="number"><?php echo $countLowStock; ?></span>
+				<span class="title">Low Stock</span>
+			</p>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="metric">
+			<span class="icon"><i class="fa fa-bar-chart"></i></span>
+			<p>
+				<span class="number">
+					<?php if($totalRevenue) {
+						echo $totalRevenue;
+					} else {
+						echo '0';
+					} ?>
+				</span>
+				<span class="title"> Total Revenue</span>
+			</p>
+		</div>
 	</div>
 
 	<div class="col-md-8">
@@ -115,12 +86,26 @@ $connect->close();
 				<div id="calendar"></div>
 			</div>	
 		</div>
-		
 	</div>
 
-	
+	<div class="col-md-2">
+		<div id="headline-chart" class="ct-chart"></div>
+	</div>
+	<div class="col-md-4">
+		<div class="weekly-summary text-right">
+			<span class="number">2,315</span> <span class="percentage"><i class="fa fa-caret-up text-success"></i> 12%</span>
+			<span class="info-label">Total Sales</span>
+		</div>
+		<div class="weekly-summary text-right">
+			<span class="number">$5,758</span> <span class="percentage"><i class="fa fa-caret-up text-success"></i> 23%</span>
+			<span class="info-label">Monthly Income</span>
+		</div>
+		<div class="weekly-summary text-right">
+			<span class="number">$65,938</span> <span class="percentage"><i class="fa fa-caret-down text-danger"></i> 8%</span>
+			<span class="info-label">Total Income</span>
+		</div>
+	</div>
 </div> <!--/row-->
-
 <!-- fullCalendar 2.2.5 -->
 <script src="assests/plugins/moment/moment.min.js"></script>
 <script src="assests/plugins/fullcalendar/fullcalendar.min.js"></script>
@@ -129,7 +114,7 @@ $connect->close();
 <script type="text/javascript">
 	$(function () {
 			// top bar active
-	$('#navDashboard').addClass('active');
+			$('#navDashboard').addClass('active');
 
       //Date for the calendar events (dummy data)
       var date = new Date();
@@ -138,18 +123,18 @@ $connect->close();
       y = date.getFullYear();
 
       $('#calendar').fullCalendar({
-        header: {
-          left: '',
-          center: 'title'
-        },
-        buttonText: {
-          today: 'today',
-          month: 'month'          
-        }        
+      	header: {
+      		left: '',
+      		center: 'title'
+      	},
+      	buttonText: {
+      		today: 'today',
+      		month: 'month'          
+      	}        
       });
 
 
-    });
+  });
 </script>
 
 <?php require_once 'includes/footer.php'; ?>
