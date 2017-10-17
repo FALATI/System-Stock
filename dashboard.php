@@ -37,42 +37,48 @@ $connect->close();
 
 <div class="row">
 	
-	<div class="col-md-4">
-		<div class="panel panel-success">
-			<div class="panel-heading">
-				
-				<a href="product.php" style="text-decoration:none;color:black;">
-					Total Product
-					<span class="badge pull pull-right"><?php echo $countProduct; ?></span>	
-				</a>
-				
-			</div> <!--/panel-hdeaing-->
-		</div> <!--/panel-->
-	</div> <!--/col-md-4-->
-
-		<div class="col-md-4">
-			<div class="panel panel-info">
-			<div class="panel-heading">
-				<a href="orders.php?o=manord" style="text-decoration:none;color:black;">
-					Total Orders
-					<span class="badge pull pull-right"><?php echo $countOrder; ?></span>
-				</a>
-					
-			</div> <!--/panel-hdeaing-->
-		</div> <!--/panel-->
-		</div> <!--/col-md-4-->
-
-	<div class="col-md-4">
-		<div class="panel panel-danger">
-			<div class="panel-heading">
-				<a href="product.php" style="text-decoration:none;color:black;">
-					Low Stock
-					<span class="badge pull pull-right"><?php echo $countLowStock; ?></span>	
-				</a>
-				
-			</div> <!--/panel-hdeaing-->
-		</div> <!--/panel-->
-	</div> <!--/col-md-4-->
+	<div class="col-md-3">
+								<div class="metric">
+									<span class="icon"><i class="fa fa-download"></i></span>
+									<p>
+										<span class="number"><?php echo $countProduct; ?></span>
+										<span class="title">Total Product</span>
+									</p>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="metric">
+									<span class="icon"><i class="fa fa-shopping-bag"></i></span>
+									<p>
+										<span class="number"><?php echo $countOrder; ?></span>
+										<span class="title">Total Orders</span>
+									</p>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="metric">
+									<span class="icon"><i class="fa fa-eye"></i></span>
+									<p>
+										<span class="number"><?php echo $countLowStock; ?></span>
+										<span class="title">Low Stock</span>
+									</p>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="metric">
+									<span class="icon"><i class="fa fa-bar-chart"></i></span>
+									<p>
+										<span class="number">
+											<?php if($totalRevenue) {
+		    										echo $totalRevenue;
+		    										} else {
+		    											echo '0';
+		    									} ?>
+										</span>
+										<span class="title"> Total Revenue</span>
+									</p>
+								</div>
+							</div>
 
 	<div class="col-md-4">
 		<div class="card">
