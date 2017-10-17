@@ -12,7 +12,7 @@ $countOrder = $orderQuery->num_rows;
 
 $totalRevenue = "";
 while ($orderResult = $orderQuery->fetch_assoc()) {
-	$totalRevenue += $orderResult['paid'];
+	@$totalRevenue += $orderResult['paid'];
 }
 
 $lowStockSql = "SELECT * FROM product WHERE quantity <= 3 AND status = 1";
