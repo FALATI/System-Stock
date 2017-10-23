@@ -41,7 +41,7 @@ if($_GET['o'] == 'add') {
 
 
 
-<div class="panel panel-default">
+<div class="panel">
 	<div class="panel-heading">
 
 		<?php if($_GET['o'] == 'add') { ?>

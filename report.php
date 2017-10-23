@@ -2,9 +2,9 @@
 
 <div class="row">
 	<div class="col-md-12">
-		<div class="panel panel-default">
+		<div class="panel">
 			<div class="panel-heading">
-				<i class="glyphicon glyphicon-check"></i>	Order Report
+				<h3 class="panel-title"><i class="glyphicon glyphicon-check"></i>	Order Report</h3>
 			</div>
 			<!-- /panel-heading -->
 			<div class="panel-body">

@@ -9,9 +9,9 @@
 		  <li class="active">Product</li>
 		</ol>
 
-		<div class="panel panel-default">
+		<div class="panel">
 			<div class="panel-heading">
-				<div class="page-heading"> <i class="glyphicon glyphicon-edit"></i> Manage Product</div>
+				<div class="page-heading"><h3 class="panel-title"><i class="glyphicon glyphicon-edit"></i> Manage Product</h3></div>
 			</div> <!-- /panel-heading -->
 			<div class="panel-body">
 
