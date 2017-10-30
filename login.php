@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Stock</title>
+<title>Lookz an E-Commerce online Shopping Category Flat Bootstrap Responsive Website Template | Login :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Lookz Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -28,11 +28,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 <div class="wrap">	
-   <div class="container">
-        <div class="header_top">
+<div class="container">
+      <div class="header_top">
 		  <div class="col-sm-9 h_menu4">
 				<ul class="megamenu skyblue">
-					  <li class="active grid"><a class="color8" href="index.php">New</a></li>	
+					  <li class="active grid"><a class="color8" href="index.html">New</a></li>	
 				      <li><a class="color1" href="#">Men</a><div class="megapanel">
 						<div class="row">
 							<div class="col1">
@@ -163,7 +163,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
    			    </div>
    			    <div class="register-info">
 				    <ul>
-						<li><a href="login.php">Login</a></li>
+						<li><a href="login.html">Login</a></li>
 					</ul>
 			    </div>
 				<div class="clearfix"> </div>
@@ -173,7 +173,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="header_bootm">
 		<div class="col-sm-4 span_1">
 		  <div class="logo">
-			<a href="index.html"><img src="admin/assests/images/logo-dark.png" alt="Stock"/></a>
+			<a href="index.html"><img src="images/logo.png" alt=""/></a>
 		  </div>
 		</div>
 		<div class="col-sm-8 row_2">
@@ -192,111 +192,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		 <div class="clearfix"></div>
 	</div>
-	<div class="grid_1">
-		<div class="col-md-3 banner_left">
-			<img src="images/pic1.png" class="img-responsive" alt=""/>
-			<div class="banner_desc">
-				<h1>Slim Fit Men </h1>
-				<h2>Roundcheck T-Shirt</h2>
-				<h5>$125
-					   <small>Only</small>
-					</h5>
-			    <a href="#" class="btn1 btn4 btn-1 btn1-1b">Add To Cart</a>
-			</div>
-		</div>
-		<div class="col-md-9 banner_right">
-					<script src="js/responsiveslides.min.js"></script>
-								<script>
-									// You can also use "$(window).load(function() {"
-									$(function () {
-									 // Slideshow 4
-									$("#slider3").responsiveSlides({
-										auto: true,
-										pager: false,
-										nav: false,
-										speed: 500,
-										namespace: "callbacks",
-										before: function () {
-									$('.events').append("<li>before event fired.</li>");
-									},
-									after: function () {
-										$('.events').append("<li>after event fired.</li>");
-										}
-										});
-										});
-								</script>
-				<div  id="top" class="callbacks_container">
-					<ul class="rslides" id="slider3">
-						<li>
-							<img src="images/banner.jpg" alt=""/>
-						</li>
-						<li>
-							<img src="images/banner1.jpg" alt=""/>
-						</li>
-					</ul>
-				</div>
-		</div>
-		<div class="clearfix"></div>
-	</div>
 <div class="content">
 <!---728x90--->
   <div class="content_box">
-	<ul class="grid_2">
-		<a href="single.html"><li><img src="images/pic2.png" class="img-responsive" alt=""/>
-			<span class="btn5">$120</span>
-			<p>Bikroy Tshirt - Roundneck</p>
-		</li></a>
-		<a href="single.html"><li><img src="images/pic3.png" class="img-responsive" alt=""/>
-			<span class="btn5">$340</span>
-			<p>Park Tshirt - Partygrandd</p>
-		</li></a>
-		<a href="single.html"><li><img src="images/pic4.png" class="img-responsive" alt=""/>
-			<span class="btn5">$250</span>
-			<p>Gray Tshirt Roundneckdd</p>
-		</li></a>
-		<a href="single.html"><li><img src="images/pic5.png" class="img-responsive" alt=""/>
-			<span class="btn5">$378</span>
-			<p>Marivo Tshirt - Roundneck</p>
-		</li></a>
-		<a href="single.html"><li class="last1"><img src="images/pic6.png" class="img-responsive" alt=""/>
-			<span class="btn5">$428</span>
-			<p>Strict TshirtSoft, Pure Cotton</p>
-		</li></a>
-		<div class="clearfix"> </div>
-	</ul>
-	<!---728x90--->
-	<div class="grid_3">
-		<div class="col-md-6 box_2">
-			<div class="section_group"> 
-		      	<div class="col_1_of_2 span_1_of_2">
-		      		<img src="images/pic7.jpg" class="img-responsive" alt=""/>
-		        </div>
-                <div class="col_1_of_2 span_1_of_2">
-		      		<img src="images/pic8.jpg" class="img-responsive" alt=""/>
-		        </div>
-                <div class="clearfix"> </div>
-            </div>
-		</div>
-		<div class="col-md-6">
-			<div class="box_3">
-			  <div class="col_1_of_2 span_1_of_2 span_3">
-		      		<h3>Paul Slim Fit Men
-						Roundneck
-						T-Shirt</h3>
-                  <h4>$156</h4>
-                  <p>Offer Available till Sunday 12 Nov 2014.</p>
-                  <a href="#" class="btn1 btn6 btn-1 btn1-1b">Add To Cart</a>
-		        </div>
-                <div class="col_1_of_2 span_1_of_2 span_4">
-                   <div class="span_5">
-		      		 <img src="images/pic9.png" class="img-responsive" alt=""/>
-		      	    </div>
-		        </div>
-                <div class="clearfix"> </div>
-            </div>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
+	<div class="men">
+	 <div class="account-in">
+							<h2>Account</h2>
+							<div class="col-md-7 account-top">
+							  <form>
+								<div> 	
+									<span>Email*</span>
+									<input type="text"> 
+								</div>
+								<div> 
+									<span class="pass">Password*</span>
+									<input type="password">
+								</div>				
+									<input type="submit" value="Login"> 
+							   </form>
+							</div>
+							<div class="col-md-5 left-account ">
+								<a href="single.html"><img class="img-responsive " src="images/s4.jpg" alt=""></a>
+								<div class="five-in">
+								<h1>25% </h1><span>discount</span>
+								</div>
+								<a href="register.html" class="create">Create an account</a>
+								<div class="clearfix"> </div>
+							</div>
+						<div class="clearfix"> </div>
+					</div>
+    </div>
 	<!---728x90--->
 	<div class="footer_top">
 	  <div class="span_of_4">
@@ -354,6 +279,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<div class="clearfix"></div>
 	</div>
+	<!---728x90--->
 		<!-- start span_of_2 -->
 		<div class="span_of_2">
 			<div class="span1_of_2">
@@ -375,25 +301,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="clearfix"></div>
 		</div>
 		<div class="copy">
-		   <p>© 2017 Fala Ti. All Rights Reserved.</p>
+		  <p>© 2015 Lookz. All Rights Reserved. Template by <a href="http://w3layouts.com/">W3layouts</a> </p>
 		</div>
      </div>
    </div>
 </div>	
-<link href="css/flexslider.css" rel='stylesheet' type='text/css' />
-							  <script defer src="js/jquery.flexslider.js"></script>
-							  <script type="text/javascript">
-								$(function(){
-								  SyntaxHighlighter.all();
-								});
-								$(window).load(function(){
-								  $('.flexslider').flexslider({
-									animation: "slide",
-									start: function(slider){
-									  $('body').removeClass('loading');
-									}
-								  });
-								});
-							  </script>
 </body>
 </html>		
