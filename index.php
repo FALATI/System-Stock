@@ -31,7 +31,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				      <li><a class="color1" href="#">Menu 1</a><div class="megapanel">
 						<div class="row">
 							<?php
-							$sql = "SELECT brand_name FROM brands WHERE brand_status = 1";
+							$sql = "SELECT brand_name FROM brands WHERE brand_status = 1 LIMIT 5";
 							$result = $connect->query($sql);
 							if (mysqli_num_rows($result) > 0) {
 								while($row = mysqli_fetch_assoc($result)) {
@@ -39,7 +39,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="#">'. $row["brand_name"].'</a></li>
+										<li><a href="#">'.$row["brand_name"].'</a></li>
 									</ul>
 								</div>';
 								}
