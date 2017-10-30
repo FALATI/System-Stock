@@ -32,7 +32,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <div class="header_top">
 		  <div class="col-sm-9 h_menu4">
 				<ul class="megamenu skyblue">
-					  <li class="active grid"><a class="color8" href="index.html">New</a></li>	
+					  <li class="active grid"><a class="color8" href="index.php">New</a></li>	
 				      <li><a class="color1" href="#">Men</a><div class="megapanel">
 						<div class="row">
 							<div class="col1">
@@ -156,14 +156,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</select>
    				    <select class="drop-down drop-down-in">
 						<option value="1">English</option>
-						<option value="2">French</option>
+						<option value="2">Prtuguese</option>
 						<option value="3">German</option>
 					</select>
    			       <div class="clearfix"></div>
    			    </div>
    			    <div class="register-info">
 				    <ul>
-						<li><a href="login.html">Login</a></li>
+						<li><a href="login.php">Login</a></li>
 					</ul>
 			    </div>
 				<div class="clearfix"> </div>
@@ -173,7 +173,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="header_bootm">
 		<div class="col-sm-4 span_1">
 		  <div class="logo">
-			<a href="index.html"><img src="images/logo.png" alt=""/></a>
+			<a href="index.php"><img src="admin/assests/images/logo-dark.png" alt=""/></a>
 		  </div>
 		</div>
 		<div class="col-sm-8 row_2">

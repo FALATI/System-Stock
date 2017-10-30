@@ -1,9 +1,4 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+<?php include"admin/php_action/db_connect.php"; ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -33,60 +28,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		  <div class="col-sm-9 h_menu4">
 				<ul class="megamenu skyblue">
 					  <li class="active grid"><a class="color8" href="index.php">New</a></li>	
-				      <li><a class="color1" href="#">Men</a><div class="megapanel">
+				      <li><a class="color1" href="#">Menu 1</a><div class="megapanel">
 						<div class="row">
+							<?php
+							$sql = "SELECT brand_name FROM brands WHERE brand_status = 1";
+							$result = $connect->query($sql);
+							if (mysqli_num_rows($result) > 0) {
+								while($row = mysqli_fetch_assoc($result)) {
+							echo '
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="men.html">Accessories</a></li>
-										<li><a href="men.html">Bags</a></li>
-										<li><a href="men.html">Caps & Hats</a></li>
-										<li><a href="men.html">Hoodies & Sweatshirts</a></li>
-										<li><a href="men.html">Jackets & Coats</a></li>
-										<li><a href="men.html">Jeans</a></li>
-										<li><a href="men.html">Jewellery</a></li>
-										<li><a href="men.html">Jumpers & Cardigans</a></li>
-										<li><a href="men.html">Leather Jackets</a></li>
-										<li><a href="men.html">Long Sleeve T-Shirts</a></li>
-										<li><a href="men.html">Loungewear</a></li>
-									</ul>	
-								</div>							
+										<li><a href="#">'. $row["brand_name"].'</a></li>
+									</ul>
+								</div>';
+								}
+							}
+							?>								
 							</div>
-							<div class="col1">
-								<div class="h_nav">
-									<ul>
-										<li><a href="men.html">Shirts</a></li>
-										<li><a href="men.html">Shoes, Boots & Trainers</a></li>
-										<li><a href="men.html">Shorts</a></li>
-										<li><a href="men.html">Suits & Blazers</a></li>
-										<li><a href="men.html">Sunglasses</a></li>
-										<li><a href="men.html">Sweatpants</a></li>
-										<li><a href="men.html">Swimwear</a></li>
-										<li><a href="men.html">Trousers & Chinos</a></li>
-										<li><a href="men.html">T-Shirts</a></li>
-										<li><a href="men.html">Underwear & Socks</a></li>
-										<li><a href="men.html">Vests</a></li>
-									</ul>	
-								</div>							
-							</div>
-							<div class="col1">
-								<div class="h_nav">
-									<h4>Popular Brands</h4>
-									<ul>
-										<li><a href="men.html">Levis</a></li>
-										<li><a href="men.html">Persol</a></li>
-										<li><a href="men.html">Nike</a></li>
-										<li><a href="men.html">Edwin</a></li>
-										<li><a href="men.html">New Balance</a></li>
-										<li><a href="men.html">Jack & Jones</a></li>
-										<li><a href="men.html">Paul Smith</a></li>
-										<li><a href="men.html">Ray-Ban</a></li>
-										<li><a href="men.html">Wood Wood</a></li>
-									</ul>	
-								</div>												
-							</div>
-						  </div>
-						</div>
 					</li>
 				    <li class="grid"><a class="color2" href="#">Women</a>
 					  <div class="megapanel">
@@ -156,7 +115,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</select>
    				    <select class="drop-down drop-down-in">
 						<option value="1">English</option>
-						<option value="2">French</option>
+						<option value="2">Portuguese</option>
 						<option value="3">German</option>
 					</select>
    			       <div class="clearfix"></div>
