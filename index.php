@@ -27,7 +27,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="header_top">
 		  <div class="col-sm-9 h_menu4">
 				<ul class="megamenu skyblue">
-					  <li class="active grid"><a class="color8" href="index.php">New</a></li>	
+					  <li class="active grid"><a class="color8" href="index.php">Home</a></li>	
 				      <li><a class="color1" href="#">Menu 1</a><div class="megapanel">
 						<div class="row">
 							<?php
@@ -47,62 +47,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							?>								
 							</div>
 					</li>
-				    <li class="grid"><a class="color2" href="#">Women</a>
-					  <div class="megapanel">
+					<li><a class="color1" href="#">Menu 2</a><div class="megapanel">
 						<div class="row">
+							<?php
+							$sql = "SELECT brand_name FROM brands WHERE brand_status = 1 LIMIT 5";
+							$result = $connect->query($sql);
+							if (mysqli_num_rows($result) > 0) {
+								while($row = mysqli_fetch_assoc($result)) {
+							echo '
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="men.html">Accessories</a></li>
-										<li><a href="men.html">Bags</a></li>
-										<li><a href="men.html">Caps & Hats</a></li>
-										<li><a href="men.html">Hoodies & Sweatshirts</a></li>
-										<li><a href="men.html">Jackets & Coats</a></li>
-										<li><a href="men.html">Jeans</a></li>
-										<li><a href="men.html">Jewellery</a></li>
-										<li><a href="men.html">Jumpers & Cardigans</a></li>
-										<li><a href="men.html">Leather Jackets</a></li>
-										<li><a href="men.html">Long Sleeve T-Shirts</a></li>
-										<li><a href="men.html">Loungewear</a></li>
-									</ul>	
-								</div>							
+										<li><a href="#">'.$row["brand_name"].'</a></li>
+									</ul>
+								</div>';
+								}
+							}
+							?>								
 							</div>
-							<div class="col1">
-								<div class="h_nav">
-									<ul>
-										<li><a href="men.html">Shirts</a></li>
-										<li><a href="men.html">Shoes, Boots & Trainers</a></li>
-										<li><a href="men.html">Shorts</a></li>
-										<li><a href="men.html">Suits & Blazers</a></li>
-										<li><a href="men.html">Sunglasses</a></li>
-										<li><a href="men.html">Sweatpants</a></li>
-										<li><a href="men.html">Swimwear</a></li>
-										<li><a href="men.html">Trousers & Chinos</a></li>
-										<li><a href="men.html">T-Shirts</a></li>
-										<li><a href="men.html">Underwear & Socks</a></li>
-										<li><a href="men.html">Vests</a></li>
-									</ul>	
-								</div>							
-							</div>
-							<div class="col1">
-								<div class="h_nav">
-									<h4>Popular Brands</h4>
-									<ul>
-										<li><a href="men.html">Levis</a></li>
-										<li><a href="men.html">Persol</a></li>
-										<li><a href="men.html">Nike</a></li>
-										<li><a href="men.html">Edwin</a></li>
-										<li><a href="men.html">New Balance</a></li>
-										<li><a href="men.html">Jack & Jones</a></li>
-										<li><a href="men.html">Paul Smith</a></li>
-										<li><a href="men.html">Ray-Ban</a></li>
-										<li><a href="men.html">Wood Wood</a></li>
-									</ul>	
-								</div>												
-							</div>
-						  </div>
-						</div>
-			    </li>
+					</li>
 				<li><a class="color4" href="404.html">Accessories</a></li>				
 				<li><a class="color6" href="contact.html">Contact</a></li>
 			  </ul> 
@@ -134,7 +97,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="col-sm-8 row_2">
 		  <div class="header_bottom_right">
 			<div class="search">
-			  <input type="text" value="Your email address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your email address';}">
+			  <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your email address';}">
 			  <input type="submit" value="">
 	  		</div>
 	  		<ul class="bag">
