@@ -110,59 +110,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		 <div class="clearfix"></div>
 	</div>
-	<!--<div class="grid_1">
-		<div class="col-md-3 banner_left">
-			<img src="images/pic1.png" class="img-responsive" alt=""/>
-			<div class="banner_desc">
-				<h1>Slim Fit Men </h1>
-				<h2>Roundcheck T-Shirt</h2>
-				<h5>$125
-					   <small>Only</small>
-					</h5>
-			    <a href="#" class="btn1 btn4 btn-1 btn1-1b">Add To Cart</a>
-			</div>
-		</div>
-		<div class="col-md-9 banner_right">
-					<script src="js/responsiveslides.min.js"></script>
-								<script>
-									// You can also use "$(window).load(function() {"
-									$(function () {
-									 // Slideshow 4
-									$("#slider3").responsiveSlides({
-										auto: true,
-										pager: false,
-										nav: false,
-										speed: 500,
-										namespace: "callbacks",
-										before: function () {
-									$('.events').append("<li>before event fired.</li>");
-									},
-									after: function () {
-										$('.events').append("<li>after event fired.</li>");
-										}
-										});
-										});
-								</script>
-				<div  id="top" class="callbacks_container">
-					<ul class="rslides" id="slider3">
-						<li>
-							<img src="images/banner.jpg" alt=""/>
-						</li>
-						<li>
-							<img src="images/banner1.jpg" alt=""/>
-						</li>
-					</ul>
-				</div>
-		</div>
-		<div class="clearfix"></div>
-	</div>-->
 <div class="content">
-<!---728x90--->
+<!--728x90-->
   <div class="content_box">
-	<ul class="grid_2">
-		<a href="single.html"><li><img src="images/pic2.png" class="img-responsive" alt=""/>
-			<span class="btn5">$120</span>
-			<p>Bikroy Tshirt - Roundneck</p>
+  	<?php
+							$sql = "SELECT * FROM product LIMIT 5";
+							$result = $connect->query($sql);
+							if (mysqli_num_rows($result) > 0) {
+								while($row = mysqli_fetch_assoc($result)) {
+echo'	<ul class="grid_2">
+		<a href="single.html"><li><img src="'.$row["product_image"].'" class="img-responsive" alt=""/>
+			<span class="btn5">$'.$row["rate"].'</span>
+			<p>'.$row["product_name"].'</p>
 		</li></a>
 		<a href="single.html"><li><img src="images/pic3.png" class="img-responsive" alt=""/>
 			<span class="btn5">$340</span>
@@ -181,8 +140,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<p>Strict TshirtSoft, Pure Cotton</p>
 		</li></a>
 		<div class="clearfix"> </div>
-	</ul>
-	<!---728x90--->
+	</ul>';
+		}
+	}
+	?>
+	<!--728x90-->
 	<div class="grid_3">
 		<div class="col-md-6 box_2">
 			<div class="section_group"> 
@@ -215,7 +177,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<div class="clearfix"> </div>
 	</div>
-	<!---728x90--->
+	<!--728x90-->
 	<div class="footer_top">
 	  <div class="span_of_4">
 		<div class="col-md-3 box_4">

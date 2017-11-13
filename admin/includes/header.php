@@ -15,7 +15,7 @@
 
   <!-- custom css -->
   <link rel="stylesheet" href="custom/css/custom.css">
-  <link rel="stylesheet" href="http://localhost/stock/assests/bootstrap/css/main.css">
+  <link rel="stylesheet" href="assests/bootstrap/css/main.css">
 
 	<!-- DataTables -->
   <link rel="stylesheet" href="assests/plugins/datatables/jquery.dataTables.min.css">
