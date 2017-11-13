@@ -150,14 +150,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="col-sm-3 header-top-right">
 			     <div class="drop_buttons">
-			  	   	<select class="drop-down "> 
-				       <option value="1">Dollar</option>
-				       <option value="2">Euro</option>
-					</select>
    				    <select class="drop-down drop-down-in">
 						<option value="1">English</option>
 						<option value="2">French</option>
-						<option value="3">German</option>
+						<option value="3">Spanish</option>
 					</select>
    			       <div class="clearfix"></div>
    			    </div>
@@ -192,7 +188,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		 <div class="clearfix"></div>
 	</div>
-	<div class="grid_1">
+	<!--<div class="grid_1">
 		<div class="col-md-3 banner_left">
 			<img src="images/pic1.png" class="img-responsive" alt=""/>
 			<div class="banner_desc">
@@ -237,7 +233,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 		</div>
 		<div class="clearfix"></div>
-	</div>
+	</div>-->
 <div class="content">
 <!---728x90--->
   <div class="content_box">
