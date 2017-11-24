@@ -1,4 +1,6 @@
-<?php include"admin/php_action/db_connect.php"; ?>
+<?php
+ include"admin/php_action/db_connect.php"; 
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -114,16 +116,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--728x90-->
   <div class="content_box">
   	<?php
-							$sql = "SELECT * FROM product LIMIT 5";
+							$sql = "SELECT * FROM product LIMIT 2";
 							$result = $connect->query($sql);
 							if (mysqli_num_rows($result) > 0) {
 								while($row = mysqli_fetch_assoc($result)) {
 echo'	<ul class="grid_2">
-		<a href="single.html"><li><img src="'.$row["product_image"].'" class="img-responsive" alt=""/>
+		<a href="#"><li><img src="http://localhost/stock/admin/'.$row["product_image"].'" class="img-responsive" alt=""/>
 			<span class="btn5">$'.$row["rate"].'</span>
 			<p>'.$row["product_name"].'</p>
 		</li></a>
-		<a href="single.html"><li><img src="images/pic3.png" class="img-responsive" alt=""/>
+		<a href="single.html"><li><img src="admin/assests/images/stock/3085957763dea90068.jpg" class="img-responsive" alt=""/>
 			<span class="btn5">$340</span>
 			<p>Park Tshirt - Partygrandd</p>
 		</li></a>
@@ -149,7 +151,7 @@ echo'	<ul class="grid_2">
 		<div class="col-md-6 box_2">
 			<div class="section_group"> 
 		      	<div class="col_1_of_2 span_1_of_2">
-		      		<img src="images/pic7.jpg" class="img-responsive" alt=""/>
+		      		<img src="admin/assests/images/stock/3085957763dea90068.jpg" class="img-responsive" alt=""/>
 		        </div>
                 <div class="col_1_of_2 span_1_of_2">
 		      		<img src="images/pic8.jpg" class="img-responsive" alt=""/>
