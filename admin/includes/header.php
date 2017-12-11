@@ -71,6 +71,7 @@
         </li> 
 
         <li id="navReport"><a href="report.php"> <i class="glyphicon glyphicon-check"></i> Report </a></li>
+        <li id=""><a href=""> <i class="glyphicon glyphicon-picture"></i> Imege Front </a></li>
 
         <li class="dropdown" id="navSetting">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="glyphicon glyphicon-user"></i> <span class="caret"></span></a>

@@ -37,8 +37,9 @@ if($result->num_rows > 0) {
 	    Action <span class="caret"></span>
 	  </button>
 	  <ul class="dropdown-menu">
+	  	<!--<li><a type="button" data-toggle="modal" data-target="#img_front" id="img_front" onclick="img_front('.$productId.')"> <i class="glyphicon glyphicon-picture"></i> Imagem Front</a></li>--> 
 	    <li><a type="button" data-toggle="modal" id="editProductModalBtn" data-target="#editProductModal" onclick="editProduct('.$productId.')"> <i class="glyphicon glyphicon-edit"></i> Edit</a></li>
-	    <li><a type="button" data-toggle="modal" data-target="#removeProductModal" id="removeProductModalBtn" onclick="removeProduct('.$productId.')"> <i class="glyphicon glyphicon-trash"></i> Remove</a></li>       
+	    <li><a type="button" data-toggle="modal" data-target="#removeProductModal" id="removeProductModalBtn" onclick="removeProduct('.$productId.')"> <i class="glyphicon glyphicon-trash"></i> Remove</a></li>
 	  </ul>
 	</div>';
 
