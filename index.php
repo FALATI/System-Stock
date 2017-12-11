@@ -102,11 +102,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			  <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your email address';}">
 			  <input type="submit" value="">
 	  		</div>
-	  		<ul class="bag">
-	  			<a href="cart.html"><i class="bag_left"> </i></a>
-	  			<a href="cart.html"><li class="bag_right"><p>205.00 $</p> </li></a>
-	  			<div class="clearfix"> </div>
-	  		</ul>
 	  		<div class="clearfix"> </div>
 		   </div>
 		</div>
@@ -116,30 +111,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--728x90-->
   <div class="content_box">
   	<?php
-							$sql = "SELECT * FROM product LIMIT 2";
-							$result = $connect->query($sql);
-							if (mysqli_num_rows($result) > 0) {
-								while($row = mysqli_fetch_assoc($result)) {
+			$sql = "SELECT * FROM product";
+				$result = $connect->query($sql);
+					if (mysqli_num_rows($result) > 0) {
+						while($row = mysqli_fetch_assoc($result)) {
 echo'	<ul class="grid_2">
 		<a href="#"><li><img src="http://localhost/stock/admin/'.$row["product_image"].'" class="img-responsive" alt=""/>
 			<span class="btn5">$'.$row["rate"].'</span>
 			<p>'.$row["product_name"].'</p>
-		</li></a>
-		<a href="single.html"><li><img src="admin/assests/images/stock/3085957763dea90068.jpg" class="img-responsive" alt=""/>
-			<span class="btn5">$340</span>
-			<p>Park Tshirt - Partygrandd</p>
-		</li></a>
-		<a href="single.html"><li><img src="images/pic4.png" class="img-responsive" alt=""/>
-			<span class="btn5">$250</span>
-			<p>Gray Tshirt Roundneckdd</p>
-		</li></a>
-		<a href="single.html"><li><img src="images/pic5.png" class="img-responsive" alt=""/>
-			<span class="btn5">$378</span>
-			<p>Marivo Tshirt - Roundneck</p>
-		</li></a>
-		<a href="single.html"><li class="last1"><img src="images/pic6.png" class="img-responsive" alt=""/>
-			<span class="btn5">$428</span>
-			<p>Strict TshirtSoft, Pure Cotton</p>
 		</li></a>
 		<div class="clearfix"> </div>
 	</ul>';
@@ -261,7 +240,8 @@ echo'	<ul class="grid_2">
 		</div>
      </div>
    </div>
-</div>	
+</div>
+<script type="text/javascript" src="admin/custom/js/product.js"></script>
 <link href="css/flexslider.css" rel='stylesheet' type='text/css' />
 							  <script defer src="js/jquery.flexslider.js"></script>
 							  <script type="text/javascript">
