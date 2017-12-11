@@ -72,22 +72,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<li><a class="color6" href="contact.html">Contact</a></li>
 			  </ul> 
 			</div>
-			<div class="col-sm-3 header-top-right">
-			     <div class="drop_buttons">
-   				    <select class="drop-down drop-down-in">
-						<option value="1">English</option>
-						<option value="2">Portuguese</option>
-						<option value="3">Spanish</option>
-					</select>
-   			       <div class="clearfix"></div>
-   			    </div>
-   			    <div class="register-info">
-				    <ul>
-						<li><a href="login.php">Login</a></li>
-					</ul>
-			    </div>
-				<div class="clearfix"> </div>
-   			 </div>
    			 <div class="clearfix"> </div>
 	</div>
     <div class="header_bootm">
@@ -110,54 +94,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="content">
 <!--728x90-->
   <div class="content_box">
-  	<?php
-			$sql = "SELECT * FROM product";
-				$result = $connect->query($sql);
-					if (mysqli_num_rows($result) > 0) {
-						while($row = mysqli_fetch_assoc($result)) {
-echo'	<ul class="grid_2">
-		<a href="#"><li><img src="http://localhost/stock/admin/'.$row["product_image"].'" class="img-responsive" alt=""/>
-			<span class="btn5">$'.$row["rate"].'</span>
-			<p>'.$row["product_name"].'</p>
-		</li></a>
-		<div class="clearfix"> </div>
-	</ul>';
-		}
-	}
-	?>
-	<!--728x90-->
-	<div class="grid_3">
-		<div class="col-md-6 box_2">
-			<div class="section_group"> 
-		      	<div class="col_1_of_2 span_1_of_2">
-		      		<img src="admin/assests/images/stock/3085957763dea90068.jpg" class="img-responsive" alt=""/>
-		        </div>
-                <div class="col_1_of_2 span_1_of_2">
-		      		<img src="images/pic8.jpg" class="img-responsive" alt=""/>
-		        </div>
-                <div class="clearfix"> </div>
-            </div>
-		</div>
-		<div class="col-md-6">
-			<div class="box_3">
-			  <div class="col_1_of_2 span_1_of_2 span_3">
-		      		<h3>Paul Slim Fit Men
-						Roundneck
-						T-Shirt</h3>
-                  <h4>$156</h4>
-                  <p>Offer Available till Sunday 12 Nov 2014.</p>
-                  <a href="#" class="btn1 btn6 btn-1 btn1-1b">Add To Cart</a>
-		        </div>
-                <div class="col_1_of_2 span_1_of_2 span_4">
-                   <div class="span_5">
-		      		 <img src="images/pic9.png" class="img-responsive" alt=""/>
-		      	    </div>
-		        </div>
-                <div class="clearfix"> </div>
-            </div>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
+<!--teste-->
+<?php
+// Seleciona todos os usuários
+$query = "SELECT product_name, quantity, product_img_front FROM product";
+
+if ($result = mysqli_query($connect, $query)) {
+
+    /* fetch associative array */
+    while ($obj = mysqli_fetch_object($result)) {
+        echo "<img src='fotos/".$obj->product_img_front."' alt='Foto de exibição' /><br />";
+        // Exibimos o nome e email
+		echo "<b>Nome:</b> " . $obj->product_name . "<br />";
+		echo "<b>Quantidade:</b> " . $obj->quantity . "<br /><br />";
+    }
+
+    /* free result set */
+    mysqli_free_result($result);
+}
+
+/* close connection */
+mysqli_close($connect);
+
+
+?>
 	<!--728x90-->
 	<div class="footer_top">
 	  <div class="span_of_4">
