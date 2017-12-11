@@ -1,25 +1,14 @@
-<?php require_once 'includes/header.php'; ?>
+<?php 
+	require_once 'includes/header.php';
+	include'php_action/db_connect.php'; 
+?>
 <?php
-// Conexão com o banco de dados
-$localhost = "127.0.0.1";
-$username = "root";
-$password = "";
-$dbname = "teste";
-
-// db connection
-$connect = new mysqli($localhost, $username, $password, $dbname);
-// check connection
-if($connect->connect_error) {
-  die("Connection Failed : " . $connect->connect_error);
-} else {
-  // echo "Successfully connected";
-}
 
 // Se o usuário clicou no botão cadastrar efetua as ações
 if (isset($_POST['cadastrar'])) {
 	
 	// Recupera os dados dos campos
-	//$nome = $_POST['nome'];
+	$nome = $_POST['nome'];
 	//$email = $_POST['email'];
 	$foto = $_FILES["foto"];
 	
@@ -75,7 +64,7 @@ if (isset($_POST['cadastrar'])) {
 		
 			// Insere os dados no banco
 			//$sql = "INSERT INTO usuarios (id, nome, email, foto) VALUES ('', '".$nome."', '".$email."', '".$nome_imagem."')";
-			$sql = mysqli_query($connect,"INSERT INTO usuarios (id, nome, email, foto) VALUES ('', '".$nome."', '".$email."', '".$nome_imagem."')");
+			$sql = mysqli_query($connect,"INSERT INTO product (product_img_front) VALUES (".$nome_imagem."')");
 		
 			// Se os dados forem inseridos com sucesso
 			if ($sql){
@@ -96,10 +85,22 @@ if (isset($_POST['cadastrar'])) {
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Cadastro de usuário</title>
+<title></title>
 </head>
 
 <body>
+
+<?php
+		$sql = "SELECT * FROM product";
+		$result = $connect->query($sql);
+		if (mysqli_num_rows($result) > 0) {
+			while($row = mysqli_fetch_assoc($result)) {
+				$id = $row['product_id'];
+				echo 'Selecione o produto: '.$id.'
+							'.$row['product_name'].'<br>';
+			}
+		}
+?>
 <h1>Image for website</h1>
 <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data" name="cadastro" >
 <!--Nome:<br />
