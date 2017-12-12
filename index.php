@@ -72,22 +72,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<li><a class="color6" href="contact.html">Contact</a></li>
 			  </ul> 
 			</div>
-			<div class="col-sm-3 header-top-right">
-			     <div class="drop_buttons">
-   				    <select class="drop-down drop-down-in">
-						<option value="1">English</option>
-						<option value="2">Portuguese</option>
-						<option value="3">Spanish</option>
-					</select>
-   			       <div class="clearfix"></div>
-   			    </div>
-   			    <div class="register-info">
-				    <ul>
-						<li><a href="login.php">Login</a></li>
-					</ul>
-			    </div>
-				<div class="clearfix"> </div>
-   			 </div>
    			 <div class="clearfix"> </div>
 	</div>
     <div class="header_bootm">
@@ -110,6 +94,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="content">
 <!--728x90-->
   <div class="content_box">
+<<<<<<< HEAD
   	<?php 
 
   		$sql = "SELECT * FROM product";
@@ -171,6 +156,32 @@ echo'	<ul class="grid_2">
 		</div>
 		<div class="clearfix"> </div>
 	</div>
+=======
+<!--teste-->
+<?php
+// Seleciona todos os usuários
+$query = "SELECT product_name, quantity, product_img_front FROM product";
+
+if ($result = mysqli_query($connect, $query)) {
+
+    /* fetch associative array */
+    while ($obj = mysqli_fetch_object($result)) {
+        echo "<img src='fotos/".$obj->product_img_front."' alt='Foto de exibição' /><br />";
+        // Exibimos o nome e email
+		echo "<b>Nome:</b> " . $obj->product_name . "<br />";
+		echo "<b>Quantidade:</b> " . $obj->quantity . "<br /><br />";
+    }
+
+    /* free result set */
+    mysqli_free_result($result);
+}
+
+/* close connection */
+mysqli_close($connect);
+
+
+?>
+>>>>>>> 665c432ec4a03f841f6641ad95edb5c75f3ef361
 	<!--728x90-->
 	<div class="footer_top">
 	  <div class="span_of_4">
