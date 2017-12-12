@@ -110,8 +110,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="content">
 <!--728x90-->
   <div class="content_box">
+  	<?php 
+
+  		$sql = "SELECT * FROM product";
+				$result = $connect->query($sql);
+					if (mysqli_num_rows($result) > 0) {
+						while($row = mysqli_fetch_assoc($result)) {
+							$teste= $row["product_id"];
+						}
+					}	
+
+
+  	?>
   	<?php
-			$sql = "SELECT * FROM product";
+			$sql = "SELECT * FROM product WHERE product_id = $teste";
 				$result = $connect->query($sql);
 					if (mysqli_num_rows($result) > 0) {
 						while($row = mysqli_fetch_assoc($result)) {
@@ -119,6 +131,7 @@ echo'	<ul class="grid_2">
 		<a href="#"><li><img src="http://localhost/stock/admin/'.$row["product_image"].'" class="img-responsive" alt=""/>
 			<span class="btn5">$'.$row["rate"].'</span>
 			<p>'.$row["product_name"].'</p>
+			<p>'.$teste.'</p>
 		</li></a>
 		<div class="clearfix"> </div>
 	</ul>';
